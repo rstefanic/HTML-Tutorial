@@ -6,24 +6,39 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Text Properties</h1>
-      <fieldset>
-	<legend><h3>&#60;p&#62; tags</h3></legend>
+      <!-- TOC -->
+      <h1>Table of Contents</h1>
+      <fieldset id="TOC">
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>&#60;p&#62; tags allow you to insert a paragraph into your page.</p>
-	      <p>Typically, if you have a block of text, then you'll want to use a &#60;p&#62; tag.</p>
-	      <p>Closing a &#60;p&#62; tag will automatically create a line break after it.</p>
-    	      <p>Here is some example code: <code>&#60;p&#62;This is a paragraph tag.&#60;/p&#62;</code></p>
+	      <ol>
+		<h3>General HTML and Text Properties</h3>
+		<li><a href="#comment">Comments</a></li>
+		<li><a href="#p">&#60;p&#62; tags</a></li>
+		<li><a href="#a">&#60;a&#62; tags</a></li>
+	      </ol>
+	    </div>
+	  </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- GENERAL HTML TEXT PROPERTIES -->
+      <h1>General HTML and Text Properties</h1>
+      <fieldset id="comment">
+	<legend><h3>Comments</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>&#60;!--&#62; tags allow you to insert a comment into your HTML.</p>
+	      <p>Comments are helpful because they allow let you write messages let other people who are reading your code know what's going on (yourself included!).</p>
+	      <p>Comments must typed in the tag. A comment is an example of a <strong>self closing</strong> tag. We will go over self-closing tags later.</p>
+    	      <p>Here is some example code: <code>&#60;!-- This is a comment --&#62;</code></p>
 	      <br>
-	      <h3>Exercises:</h3>
-	      <p>Create 3 paragraphs that look like this:</p>
-	      <div class="example">
-		<p>This is a paragraph inside of a p tag. The line overflows, but it doesn't create a line break.</p>
-		<p>This is another paragraph inside of a p tag.</p>
-		<p>This is a third paragraph inside of a p tag.</p>
-	      </div>
+	      <h3>Examples and Exercises:</h3>
+	      <p>Write a comment. Notice how if you put something in the &#60;!--  --&#62; comment tag, it will not appear in the code. Try it!</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -46,12 +61,82 @@
 	</div>
 	<br>
       </fieldset>
-      <fieldset>
+      <fieldset id="p">
+	<legend><h3>&#60;p&#62; tags</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>&#60;p&#62; tags allow you to insert a paragraph into your page.</p>
+	      <p>Typically, if you have a block of text, then you'll want to use a &#60;p&#62; tag.</p>
+	      <p>Closing a &#60;p&#62; tag will automatically create a line break after it.</p>
+    	      <p>Here is some example code: <code>&#60;p&#62;This is a paragraph tag.&#60;/p&#62;</code></p>
+	      <br>
+	      <h3>Examples and Exercises:</h3>
+	      <p>Create 3 paragraphs that look like this:</p>
+	      <div class="example">
+		<p>This is a paragraph inside of a p tag. The line overflows, but it doesn't create a line break.</p>
+		<p>This is another paragraph inside of a p tag.</p>
+		<p>This is a third paragraph inside of a p tag.</p>
+	      </div>
+	      <div class="resp-row">
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt" >Your input here:</P>
+		   <textarea id="ei1" class="exercise-input"></textarea>
+		 </div>
+	       </div>
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt">Your output here:</p>
+		   <div id="eo1" class="exercise-output"></div>
+		 </div>
+	       </div>
+	       <div class="clear"></div>
+	      </div>
+	      <br>
+	    </div>
+	  </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+      <fieldset id="a">
 	<legend><h3>&#60;a&#62; tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
+	      <p>&#60;a&#62; tags allow you to create links that can be placed inside of your pages.</p>
+	      <p>Closing an &#60;a&#62; tag will <strong>not</strong> cause a line break.</p>
+	      <p>An &#60;a&#62; tag must have an <code>href</code> inside of the opening &#60;a&#62; tag. It's the reference point. The address listed in the &#60;a&#62; tag will be where the user is redirected once they've clicked on the link</p>
+    	      <p>Here is an example of an &#60;a&#62; tag. This links to Google's website.: </p><code>&#60;a href="https://www.google.com"&#62;www.google.com&#60;/a&#62;</code>
+	      <br>
+	      <h3>Examples and Exercises:</h3>
+	      <p>Create 3 links to three websites:</p>
+	      <div class="example">
+		<a href="https://www.google.com">www.google.com</a>
+		<br>
+		<br>
+		<a href="https://www.google.com">This is also a link to Google, but the text inside the tag has changed.</a>
+		<br>
+		<br>
+		<a href="https://www.clubexpress.com">Club Express</a>
+	      </div>
+	      <div class="resp-row">
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt" >Your input here:</P>
+		   <textarea id="ei2" class="exercise-input"></textarea>
+		 </div>
+	       </div>
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt">Your output here:</p>
+		   <div id="eo2" class="exercise-output"></div>
+		 </div>
+	       </div>
+	       <div class="clear"></div>
+	      </div>
+	      <br>
 	    </div>
 	  </div>
 	  <div class="clear"></div>
