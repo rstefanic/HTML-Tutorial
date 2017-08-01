@@ -13,8 +13,9 @@
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
 	      <ol>
-		<h3>General HTML and Text Properties</h3>
-		<li><a href="#anatomy">The Anatomy of HTML Tags and Elements</a></li>
+		<h3>What is HTML?</h3>
+		<li><a href="#anatomy">The Anatomy of HTML: Elements and Tags</a></li>
+		<h3>Text Properties</h3>
 		<li><a href="#comment">Comments</a></li>
 		<li><a href="#p">&#60;p&#62; tags</a></li>
 		<li><a href="#br">&#60;br&#62; tags</a></li>
@@ -30,17 +31,19 @@
       </fieldset>
     </div>
     
-    <!-- GENERAL HTML TEXT PROPERTIES -->
+    <!-- What is HTML? HTML Anatomy  -->
     <div class="wrapper">
-      <h1>General HTML and Text Properties</h1>
+      <h1>What is HTML? The Anatomy of HTML</h1>
 
       <!-- Tag Anatomy -->
       <fieldset id="anatomy">
-	<legend><h3>The Anatomy of HTML Tags and Elements</h3></legend>
+	<legend><h3>The Anatomy of HTML: Elements and Tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>An HTML tag is made of up:</p>
+	      <p><strong>What is HTML?</strong> HTML stands for <em>HyperText Markup Language</em>. It's a mark up language that's used to define the layout of a webpage. You can think of it as the barebones skeleton of a webpage.</p>
+	      <p>HTML is made up of <strong>elements</strong>, and an element is created by tags.</p>
+	      <p><strong>So what is a tag?</strong> An tag is made up of:</p>
 	      <ul>
 		<li>Angled brackets ('&#60;' and '&#62;')</li>
 		<li>The name of the tag</li>
@@ -48,12 +51,24 @@
 		<li>The attribute's value</li>
 	      </ul>
 	      <p>A tag is anything enclosed within the angled brackets. The inital word inside of an angle bracket is known as the <strong>name</strong> of the tag. So an example of a <em>paragraph</em> tag would be &#60;p&#62; tag. The <strong>p</strong> is the name of the tag, as it sits in between the angled brackets.
-	      <p>Tags that are opened must also be closed (barring a few expections), like so: <code>&#60;p&#62;&#60;/p&#62;</code></p>
+	      <p>All elements must have an opening and closing tag, like so: <code>&#60;p&#62;&#60;/p&#62;</code></p>
 	      <p>The former &#60;p&#62; tag is known as the <strong>opening tag</strong> and the latter &#60;/p&#62; tag is known as the <strong>closing tag</strong>. Notice how the closing tag starts with a '/'. This indicates that it is the closing tag.</p>
 	      <p>In order to place text inside of a paragraph, you'll insert your paragraph text inbetween the opening and closing tags like so: <code>&#60;p&#62;My Text&#60;/p&#62;</code></p>
-	      <p>Remember how I just mentioned how tags must be closed? Some tags do not need to be closed, and these are known as <strong>Self closing tags</strong>, meaning that they do not require a closing tag. Most tags need to be closed, and the ones that do not need to be closed will be pointed out throughout this tutorial.</p>
+	      <p>Remember how I just mentioned how tags must be closed? Well, that was a lie. Some tags do not need a closing tag, and these are known as <strong>self closing tag elements</strong>, meaning that they do not require a closing tag. Most tags need to be closed, and I'll be sure to let you know which tags do not need a closing tag</p>
 	      <p>We will cover <em>attributes</em> and their values later on once we come across a tag that uses them.</p>
-	      <br>
+	      <fieldset>
+		<legend>N.B.</legend>
+	      <p><em>A quick note on display styles:</em><br><br>Different elements have different display properties by default. These defaults can be changed, but this falls a bit out of the scope of HTML; however, it's worth noting when learning HTML. For simplicity, there are three display styles: </p>
+	      <p><strong>Inline</strong> elements allow other elements to sit to their left and right.</p>
+	      <p><strong>Block</strong> elements force a line break after the element.</p>
+	      <p><strong>Inline-block</strong> elements allow other elements to sit to their left and right, while retaining other <strong>block</strong> element propertires. What those properties are is unimportant for the scope of this tutorial.</p>
+	      <p>The major point here is that:
+		<ul>
+		  <li><em>Inline</em> elements can sit next to each other.</li>
+		  <li><em>Block</em> elements will create a line break after the element.</li>
+		</ul>
+	      </p>
+	      </fieldset>
 	      <h3>Examples and Exercises:</h3>
 	      <p>Throughout this document, you'll find an area that looks like this where you can type in HTML and test it. Go ahead and try inputing text into the box. If you're feeling adventurous, then go ahead and try typing in some HTML.</p>
 	      <div class="resp-row">
@@ -78,9 +93,12 @@
 	</div>
 	<br>
       </fieldset>
+    </div>
 
-      
-      <!-- TODO: Talk about tags, and what makes up a tag. The closing tag, the opening tag, self closing tags, attributes, etc. -->
+
+    <!-- Text Properties -->
+    <div class="wrapper">
+      <h1>Text Properties</h1>
       <!-- COMMENTS -->
       <fieldset id="comment">
 	<legend><h3>Comments</h3></legend>
@@ -250,11 +268,11 @@
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;h1&#62; tags allow you to create headings.</p>
 	      <p>&#60;h1&#62; tags are the largest heading tags.</p>
-	      <p>An &#60;h1&#62; isn't the only heading. You can use anything from &#60;h1&#62; to &#60h5&#62;, although h1-h3 are the most common ones.</p>
+	      <p>An &#60;h1&#62; isn't the only heading. You can use anything from &#60;h1&#62; to &#60h6&#62;, although h1-h3 are the most common ones.</p>
     	      <p>Here is an example of an &#60;h1&#62; tag: </p><code>&#60;h1&#62;Heading&#60;/h1&#62;</code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-	      <p>Experiment with different header tags from &#60;h1&#62 to &#60;h5&#62;:</p>
+	      <p>Experiment with different header tags from &#60;h1&#62 to &#60;h6&#62;:</p>
 	      <div class="example">
 		<h1>Heading 1</h1>
 		<h2>Heading 2</h2>
