@@ -18,6 +18,8 @@
 		<li><a href="#p">&#60;p&#62; tags</a></li>
 		<li><a href="#br">&#60;br&#62; tags</a></li>
 		<li><a href="#a">&#60;a&#62; tags</a></li>
+		<li><a href="#h1">&#60;h1&#62; tags</a></li>
+		<li><a href="#text-notes">Closing Remarks on Text Properties</a></li>
 	      </ol>
 	    </div>
 	  </div>
@@ -30,14 +32,15 @@
     <!-- GENERAL HTML TEXT PROPERTIES -->
     <div class="wrapper">
       <h1>General HTML and Text Properties</h1>
-	
+
+      <!-- TODO: Talk about tags, and what makes up a tag. The closing tag, the opening tag, self closing tags, attributes, etc. -->
       <!-- COMMENTS -->
       <fieldset id="comment">
 	<legend><h3>Comments</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>&#60;!--&#62; tags allow you to insert a comment into your HTML.</p>
+	      <p>&#60;!-- --&#62; tags allow you to insert a comment into your HTML.</p>
 	      <p>Comments are helpful because they allow let you write messages let other people who are reading your code know what's going on (yourself included!).</p>
 	      <p>Comments must typed in the tag. A comment is an example of a <strong>self closing</strong> tag. We will go over self-closing tags later.</p>
     	      <p>Here is some example code: <code>&#60;!-- This is a comment --&#62;</code></p>
@@ -66,7 +69,8 @@
 	</div>
 	<br>
       </fieldset>
-      
+
+      <!-- TODO: Explain more information on how p tags create space before and after the paragraph -->
       <!-- p Tags -->
       <fieldset id="p">
 	<legend><h3>&#60;p&#62; tags</h3></legend>
@@ -155,7 +159,7 @@
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;a&#62; tags allow you to create links that can be placed inside of your pages.</p>
 	      <p>Closing an &#60;a&#62; tag will <strong>not</strong> cause a line break.</p>
-	      <p>An &#60;a&#62; tag must have an <code>href</code> inside of the opening &#60;a&#62; tag. It's the reference point. The address listed in the &#60;a&#62; tag will be where the user is redirected once they've clicked on the link</p>
+	      <p>An &#60;a&#62; tag must have an <code>href=""</code> inside of the opening &#60;a&#62; tag. It's the reference point. The address listed in the &#60;a&#62; tag will be where the user is redirected once they've clicked on the link</p>
     	      <p>Here is an example of an &#60;a&#62; tag. This links to Google's website.: </p><code>&#60;a href="https://www.google.com"&#62;www.google.com&#60;/a&#62;</code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
@@ -190,6 +194,86 @@
 	  <div class="clear"></div>
 	</div>
       </fieldset>
+
+      <!-- h1 tags -->
+      <fieldset id="h1">
+	<legend><h3>&#60;h1&#62; tags</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>&#60;h1&#62; tags allow you to create headings.</p>
+	      <p>&#60;h1&#62; tags are the largest heading tags.</p>
+	      <p>An &#60;h1&#62; isn't the only heading. You can use anything from &#60;h1&#62; to &#60h5&#62;, although h1-h3 are the most common ones.</p>
+    	      <p>Here is an example of an &#60;h1&#62; tag: </p><code>&#60;h1&#62;Heading&#60;/h1&#62;</code>
+	      <br>
+	      <h3>Examples and Exercises:</h3>
+	      <p>Experiment with different header tags from &#60;h1&#62 to &#60;h5&#62;:</p>
+	      <div class="example">
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+	      </div>
+	      <div class="resp-row">
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt" >Your input here:</P>
+		   <textarea id="ei4" class="exercise-input"></textarea>
+		 </div>
+	       </div>
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt">Your output here:</p>
+		   <div id="eo4" class="exercise-output"></div>
+		 </div>
+	       </div>
+	       <div class="clear"></div>
+	      </div>
+	      <br>
+	    </div>
+	  </div>
+	  <div class="clear"></div>
+	</div>
+      </fieldset>
+
+      <!-- text-notes -->
+      <fieldset id="text-notes">
+	<legend><h3>Closing Remarks on Text Properties</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>There are a few extra tags that are related to text.</p>
+	      <p>The &#60;strong&#62; tag, the &#60;em&#62; tag, and the &#60;span&#62; tag.</p>
+	      <p>&#60;strong&#62; tags are used to bold text. Example: <code>&#60;strong&#62;Bolded text&#60;/strong&#62;</code></p>
+	      <p>&#60;em&#62; tags are for <em>em</em>phasis (italics). Example: <code>&#60;em&#62;Emphasised text&#60;/em&#62;</code></p>
+	      <p>&#60;span&#62; tags are a little special, and they will be covered in more deail later</p>
+	      <br>
+	      <h3>Examples and Exercises:</h3>
+	      <p>Experiment with #60;strong&#62 and &#60;em&#62; tags. You can nest them in &#60;p&#62; tags and even within themselves!</p>
+	      <div class="example">
+
+	      </div>
+	      <div class="resp-row">
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt" >Your input here:</P>
+		   <textarea id="ei5" class="exercise-input"></textarea>
+		 </div>
+	       </div>
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt">Your output here:</p>
+		   <div id="eo5" class="exercise-output"></div>
+		 </div>
+	       </div>
+	       <div class="clear"></div>
+	      </div>
+	      <br>
+	    </div>
+	  </div>
+	  <div class="clear"></div>
+	</div>
+      </fieldset>
+      
     </div>
     <script type="text/javascript" src="script.js"></script>
   </body>

@@ -24,4 +24,4 @@ function generatePairs(amountOfPairs) {
     }
 }
 
-generatePairs(4);
+generatePairs(6);
