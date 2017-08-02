@@ -15,7 +15,7 @@
 	      <ol>
 		<h3>What is HTML?</h3>
 		<li><a href="#anatomy">The Anatomy of HTML: Elements and Tags</a></li>
-		<h3>Text Properties</h3>
+		<h3>HTML Basics and Text Properties</h3>
 		<li><a href="#comment">Comments</a></li>
 		<li><a href="#p">&#60;p&#62; tags</a></li>
 		<li><a href="#br">&#60;br&#62; tags</a></li>
@@ -98,7 +98,7 @@
 
     <!-- Text Properties -->
     <div class="wrapper">
-      <h1>Text Properties</h1>
+      <h1>Basics and Text Properties</h1>
       <!-- COMMENTS -->
       <fieldset id="comment">
 	<legend><h3>Comments</h3></legend>
@@ -107,7 +107,7 @@
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;!-- --&#62; tags allow you to insert a comment into your HTML.</p>
 	      <p>Comments are helpful because they allow let you write messages let other people who are reading your code know what's going on (yourself included!).</p>
-	      <p>Comments must typed in the tag. A comment is an example of a <strong>self closing</strong> tag. We will go over self-closing tags later.</p>
+	      <p>Comments must typed inisde the tag. A comment is an example of a <strong>self closing</strong> tag.</p>
     	      <p>Here is some example code: <code>&#60;!-- This is a comment --&#62;</code></p>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
@@ -144,7 +144,7 @@
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;p&#62; tags allow you to insert a paragraph into your page.</p>
 	      <p>Typically, if you have a block of text, then you'll want to use a &#60;p&#62; tag.</p>
-	      <p>Closing a &#60;p&#62; tag will automatically create a line break after it.</p>
+	      <p>&#60;p&#62; tags are block elements, so a line break will occur after a &#60;p&#62; has been closed.</p>
     	      <p>Here is some example code: <code>&#60;p&#62;This is a paragraph tag.&#60;/p&#62;</code></p>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
@@ -183,7 +183,7 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>&#60;br&#62; creates a linebreak in your page.</p>
+	      <p>&#60;br&#62; creates a linebreak in your text.</p>
 	      <p>&#60;br&#62; is a self closing tag.</p>
 	      <p>You can nest &#60;br&#62; tags inside other tags.
     	      <p>Here is an example of a &#60;br&#62; tag inside of a &#60;p&#62; tag: <code>&#60;p&#62;This is a &#60;br&#62; paragraph tag.&#60;/p&#62;</code></p>
@@ -223,9 +223,10 @@
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;a&#62; tags allow you to create links that can be placed inside of your pages.</p>
-	      <p>Closing an &#60;a&#62; tag will <strong>not</strong> cause a line break.</p>
-	      <p>An &#60;a&#62; tag must have an <code>href=""</code> inside of the opening &#60;a&#62; tag. It's the reference point. The address listed in the &#60;a&#62; tag will be where the user is redirected once they've clicked on the link</p>
-    	      <p>Here is an example of an &#60;a&#62; tag. This links to Google's website.: </p><code>&#60;a href="https://www.google.com"&#62;www.google.com&#60;/a&#62;</code>
+	      <p>Closing an &#60;a&#62; tag will <strong>not</strong> cause a line break because they are inline elelements, meaning that they allow other elements to sit to the left and right of them.</p>
+	      <p>An &#60;a&#62; tag must include an <code>href</code> attribute. <strong>Attributes</strong> provide additional information about that element to the browser. So in this example, the &#60;a&#62; tag must have an <code>href</code> attribute in order to tell the browser where the link will redirect to once clicked on. Nearly every attribute is accompanied by an <strong>attribute value</strong>. The attribute tells the browser how to treat the the following information, and then the attribute value is the additional information.</p>
+	      <p>So the <code>href</code> attribute tells the browser that this is a reference link, and the attribute value is the link. </p>
+    	      <p>Here is an example of an &#60;a&#62; tag. This links to Google's website: </p><code>&#60;a href="https://www.google.com"&#62;www.google.com&#60;/a&#62;</code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
 	      <p>Create 3 links to three websites:</p>
@@ -266,9 +267,8 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>&#60;h1&#62; tags allow you to create headings.</p>
-	      <p>&#60;h1&#62; tags are the largest heading tags.</p>
-	      <p>An &#60;h1&#62; isn't the only heading. You can use anything from &#60;h1&#62; to &#60h6&#62;, although h1-h3 are the most common ones.</p>
+	      <p>&#60;h1&#62; tags allow you to create headings. &#60;h1&#62; tags are the largest heading tags.</p>
+	      <p>You can use anything from &#60;h1&#62; to &#60h6&#62;, although &#60;h1&#62, &#60;h2&#62;, and &#60;h3&#62; tags are the most commonly used headings.</p>
     	      <p>Here is an example of an &#60;h1&#62; tag: </p><code>&#60;h1&#62;Heading&#60;/h1&#62;</code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
@@ -302,7 +302,7 @@
 
       <!-- text-notes -->
       <fieldset id="text-notes">
-	<legend><h3>Closing Remarks on Text Properties</h3></legend>
+	<legend><h3>Closing Remarks on the Basics and Text Properties</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
