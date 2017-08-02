@@ -21,7 +21,7 @@
 		<li><a href="#br">&#60;br&#62; tags</a></li>
 		<li><a href="#a">&#60;a&#62; tags</a></li>
 		<li><a href="#h1">&#60;h1&#62; tags</a></li>
-		<li><a href="#text-notes">Closing Remarks on Text Properties</a></li>
+		<li><a href="#text-notes">Closing Remarks</a></li>
 	      </ol>
 	    </div>
 	  </div>
@@ -135,7 +135,6 @@
 	<br>
       </fieldset>
 
-      <!-- TODO: Explain more information on how p tags create space before and after the paragraph -->
       <!-- p Tags -->
       <fieldset id="p">
 	<legend><h3>&#60;p&#62; tags</h3></legend>
@@ -302,21 +301,28 @@
 
       <!-- text-notes -->
       <fieldset id="text-notes">
-	<legend><h3>Closing Remarks on the Basics and Text Properties</h3></legend>
+	<legend><h3>Closing Remarks on the Basics and Additional Text Elements</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>There are a few extra tags that are related to text.</p>
-	      <p>The &#60;strong&#62; tag, the &#60;em&#62; tag, and the &#60;span&#62; tag.</p>
-	      <p>&#60;strong&#62; tags are used to <strong>bold</strong> text. Example: <code>&#60;strong&#62;Bolded text&#60;/strong&#62;</code></p>
-	      <p>&#60;em&#62; tags are for <em>em</em>phasis (italics). Example: <code>&#60;em&#62;Emphasised text&#60;/em&#62;</code></p>
-	      <p>&#60;span&#62; tags are a little special, and they will be covered in more deail later</p>
+	      <p>There are a few final things to consider here. One has to do with the most common attributes that you'll see and the other is just a few extra elements that are related to text.</p>
+	      <h3>Common Attributes</h3>
+	      <p>There are three more attributes besides the <code>href</code> attribute that you'll likely encounter:
+		<ul>
+		  <li style="margin-bottom: 5px;"><code>class</code></li>
+		  <li style="margin-bottom: 5px;"><code>id</code></li>
+		  <li style="margin-bottom: 5px;"><code>style</code></li>
+		</ul>
+	      </p>
+	      <p>These are all related to CSS, but you'll commonly see them. <code>class</code> a way to tag an element with a certain class, <code>id</code> is a way to give a specific element an id (every id must be unique, and it may only be assigned to one element), and <code>style</code> is a way to directly write CSS into your HTML.</p>
+	      <h3>Additional Text Elements</h3>
+	      <p>In addition to the text related elements that we previously went over, there are a few extra ones that you'll commonly see: the &#60;strong&#62; tag, the &#60;em&#62; tag, and the &#60;span&#62; tag. All three of these are <em>inline</em> elements.</p>
+	      <p>&#60;strong&#62; tags are used to <strong>bold</strong> text. Example: <code>&#60;strong&#62;Bolded text&#60;/strong&#62;</code><br>While the &#60;b&#62; does sometimes work, it is being phased out in favor of &#60;strong&#62;.</p>
+	      <p>&#60;em&#62; tags are for <em>em</em>phasis (italics). Example: <code>&#60;em&#62;Emphasised text&#60;/em&#62;</code><br>Similar to the &#60;b&#62; tag, the &#60;i&#62; tag may also be used, but is also being phased out.</p>
+	      <p>&#60;span&#62; tags are a little special. They act as empty containers that you can wrap around your text or other elements. The power of them come from the fact that since they're empty containers, you can define your own rules on how it will look through <code>class</code> and <code>id</code> attributes. Customizing &#60;span&#62; tags are a bit beyond the scope of this document, but it's worth knowing what they are as they you'll commonly see them used.</p>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-	      <p>Experiment with &#60;strong&#62 and &#60;em&#62; tags. You can nest them in &#60;p&#62; tags and even within themselves!</p>
-	      <div class="example">
-
-	      </div>
+	      <p>Experiment with &#60;strong&#62 and &#60;em&#62; tags. You can nest them in &#60;p&#62; tags and even within themselves! You can also experiment with &#60;span&#62; span tags to see how they don't really do anything by themselves. You can also try &#60;b&#62; and &#60;i&#62; tags to see how they are the same as their respecitve &#60;strong&#62; and &#60;em&#62; counterparts. </p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
