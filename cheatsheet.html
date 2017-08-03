@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HTML Cheatsheet</title>
+    <title>HTML Tutorial</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -469,7 +469,7 @@
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;img&#62; tags allow you to place images into your document. Just like the &#60;a&#62; tag that we saw earlier, &#60;img&#62; tags also require an attribute: the <code>src</code> attribute. <code>src</code> stands for <em>source</em>, and the source will be where the image is hosted. The hosted picture can be located locally on your computer, relative to another place on your website, or hosted on another another website.</p>
-	      <p>Image tags are <em>self closing</em> tags and their display with <strong>inline-block</strong>, meaning that pictures will line up next to text or other inline elements.</p>
+	      <p>Image tags are <em>self closing</em> tags and their display with <strong>inline-block</strong>, meaning that &#60;img&#62; element will line up next to text or other inline elements.</p>
 	      <p>Here's an example of an image tag.</p>
 	      <code>&#60;img src="./homer.png"/&#62;</code>
 	      <div class="example" style="height: auto;">
@@ -508,10 +508,48 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
+	      <p>As a general rule, you should stay away from tables. They are, however, a part of HTML, and you'll still see them around the web. There are various reasons as to <a href="https://stackoverflow.com/questions/83073/why-not-use-tables-for-layout-in-html#answer-84986">why you should avoid tables</a>, but it's still important to know how to use them because you'll come across on older sites.</p>
+	      <p>One strong reason not to use tables is that they quickly become difficult to manage. I'm sure you'll see this in the following example, even though we're working with a small table.</p>
+	      <p>The basics of a table are as follows:</p>
+	      <p>You define a table using the &#60;table&#62; tag. Inside of the table tag, you'll have a &#60;tr&#62; tag for each row (<em>tr = table row</em>). For each row, you'll have a &#60;td&#62; tag for each column in that row (<em>td = table ____</em> -- I'm not sure what they were thinking here).</p>
+	      <p>To define a header header row, you'll use &#60;th&#62; (<em>th = table header</em>) instead of &#60;td&#62; for your header.</p>
+	      <p>Here is an example of a table:</p>
+	      <div class="example">
+		<table>
+		  <tr>
+		    <th>Name</th>
+		    <th>Height</th> 
+		  </tr>
+		  <tr>
+		    <td>Jill</td>
+		    <td>5'10"</td>
+		  </tr>
+		  <tr>
+		    <td>Eve</td>
+		    <td>5'5"</td>
+		  </tr>
+		</table>
+	      </div>
+	      <br>
+	      <code class="code-block">
+		&#60;table&#62;
+		<br>&nbsp;&nbsp;&#60;tr&#62;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Name&#60/th&#62;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Height&#60/th&#62;
+		<br>&nbsp;&nbsp;&#60;/tr&#62;
+		<br>&nbsp;&nbsp;&#60;tr&#62;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Jill&#60/td&#62;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;5'10"&#60/td&#62;
+		<br>&nbsp;&nbsp;&#60;/tr&#62;
+		<br>&nbsp;&nbsp;&#60;tr&#62;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Eve&#60/td&#62;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;5'5"&#60/td&#62;
+		<br>&nbsp;&nbsp;&#60;/tr&#62;
+		<br>&#60;/table&#62;
+	      </code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-
+	      <p>Create a one column table listing your immediate family members.</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
