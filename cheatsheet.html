@@ -331,7 +331,7 @@
 	      <p>Understanding these basics in the first section is important for laying a base down to for understanding HTML. From here on out, if you understand the basics from this first section, then your understanding of HTML will just fall into place.</p>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-	      <p>Experiment with &#60;strong&#62 and &#60;em&#62; tags. You can nest them in &#60;p&#62; tags and even within themselves! You can also experiment with &#60;span&#62; span tags to see how they don't really do anything by themselves. You can also try &#60;b&#62; and &#60;i&#62; tags to see how they are the same as their respecitve &#60;strong&#62; and &#60;em&#62; counterparts. </p>
+	      <p>Experiment with &#60;strong&#62; and &#60;em&#62; tags. You can nest them in &#60;p&#62; tags and even within themselves! You can also experiment with &#60;span&#62; span tags to see how they don't really do anything by themselves. You can also try &#60;b&#62; and &#60;i&#62; tags to see how they are the same as their respecitve &#60;strong&#62; and &#60;em&#62; counterparts. </p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -362,14 +362,29 @@
       
       <!-- Ordered Lists -->
       <fieldset id="ol">
-	<legend><h3>&#60;ul&#62;</h3></legend>
+	<legend><h3>&#60;ol&#62;</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>&#60;ol&#62; creates an ordered list.</p>
+	      <p>&#60;ol&#62; creates an ordered list. This enumerates a list of items. For each item that you have on your list, it will put a number infront of it.</p>
+	      <p>Inside of your ordered lists, you create &#60;li&#62; tags. Each &#60;li&#62; tag is an item on your list. When you add elements into your ordered lists, they will be numbered for each item in your list.</p>
+	      <p>This is an ordered list:</p>
+	      <div class="example"><ol>
+		  <li>Item 1</li>
+		  <li>Item 2</li>
+		  <li>Item 3</li>
+		</ol>
+	      </div>
+	      <p>This is the ordered list coded out:</p>
+	      <code class="code-block">&#60;ol&#62;
+		<br>&nbsp;&nbsp;&#60;li&#62;Item 1&#60;/li&#62;
+		<br>&nbsp;&nbsp;&#60;li&#62;Item 2&#60;/li&#62;
+		<br>&nbsp;&nbsp;&#60;li&#62;Item 3&#60;/li&#62;
+		<br>&#60;/ol&#62;
+	      </code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-
+	      <p>Rank your five favorite movies using an ordered list.</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -427,7 +442,7 @@
       </fieldset>
 
       <!-- IMG Tags -->
-      <fieldset id="img-tags">
+      <fieldset id="img">
 	<legend><h3>&#60;img&#62;</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
