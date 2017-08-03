@@ -46,6 +46,10 @@ code {
     font-family: Georgia, Times, 'Times New Roman', serif
 }
 
+.div-output div {
+    border: 1px solid black;
+}
+
 legend {
     padding: 0 5px;
 }
