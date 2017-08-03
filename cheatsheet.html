@@ -15,7 +15,7 @@
 	      <ol>
 		<h3>What is HTML?</h3>
 		<li><a href="#anatomy">The Anatomy of HTML: Elements and Tags</a></li>
-		<h3>HTML Basics and Text Properties</h3>
+		<h3>Basics Elements and Text Properties</h3>
 		<li><a href="#comment">Comments</a></li>
 		<li><a href="#p">&#60;p&#62; tags</a></li>
 		<li><a href="#br">&#60;br&#62; tags</a></li>
@@ -28,7 +28,7 @@
 		<li><a href="#img">&#60;img&#62;</a></li>
 		<li><a href="#table">&#60;table&#62;</a></li>
 		<li><a href="#div">&#60;div&#62;</a></li>
-		<li><a href="#layout-extra">Additional HTML5 Layout Elements</a></li>
+		<li><a href="#semantic">HTML5 Semantic Elements</a></li>
 		<h3>Meta Data Tags</h3>
 	      </ol>
 	    </div>
@@ -104,9 +104,9 @@
     </div>
 
 
-    <!-- Text Properties -->
+    <!-- Basic Elements and Text Properties -->
     <div class="wrapper">
-      <h1>Basics and Text Properties</h1>
+      <h1>Basic Elements and Text Properties</h1>
       <!-- COMMENTS -->
       <fieldset id="comment">
 	<legend><h3>Comments</h3></legend>
@@ -359,17 +359,22 @@
     <!-- Layout Elements -->
     <div class="wrapper">
       <h1>Layout Elements</h1>
+      <fieldset class="nb">
+	<legend>N.B.</legend>
+	<p>Every element in this section has a display style of <strong>block</strong> except for &#60;img&#62; tags.</p>
+      </fieldset>
       
       <!-- Ordered Lists -->
       <fieldset id="ol">
-	<legend><h3>&#60;ol&#62;</h3></legend>
+	<legend><h3>&#60;ol&#62; tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
 	      <p>&#60;ol&#62; creates an ordered list. This enumerates a list of items. For each item that you have on your list, it will put a number infront of it.</p>
 	      <p>Inside of your ordered lists, you create &#60;li&#62; tags. Each &#60;li&#62; tag is an item on your list. When you add elements into your ordered lists, they will be numbered for each item in your list.</p>
 	      <p>This is an ordered list:</p>
-	      <div class="example"><ol>
+	      <div class="example">
+		<ol>
 		  <li>Item 1</li>
 		  <li>Item 2</li>
 		  <li>Item 3</li>
@@ -410,14 +415,30 @@
 
       <!-- Unordered Lists -->
       <fieldset id="ul">
-	<legend><h3>&#60;ul&#62;</h3></legend>
+	<legend><h3>&#60;ul&#62; tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
+	      <p>&#60;ul&#62; allow you to create a list of items in no particular order. They list items in bullet points.</p>
+	      <p>Just like the &#60;ol&#62; tags, &#60;ul&#62; tags must have &#60;li&#62; elements inside of them.</p>
+	      <p>This is an unordered list</p>
+	      <div class="example">
+		<ul>
+		  <li>Item 1</li>
+		  <li>Item 2</li>
+		  <li>Item 3</li>
+		</ul>
+	      </div>
+	      <p>This is the unordered list coded out:</p>
+	      <code class="code-block">&#60;ul&#62;
+		<br>&nbsp;&nbsp;&#60;li&#62;Item 1&#60;/li&#62;
+		<br>&nbsp;&nbsp;&#60;li&#62;Item 1&#60;/li&#62;
+		<br>&nbsp;&nbsp;&#60;li&#62;Item 1&#60;/li&#62;
+		<br>&#60;/ul&#62;
+	      </code>
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-
+	      <p>Name 4 TV shows using an unordered list.</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -443,14 +464,21 @@
 
       <!-- IMG Tags -->
       <fieldset id="img">
-	<legend><h3>&#60;img&#62;</h3></legend>
+	<legend><h3>&#60;img&#62; tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
+	      <p>&#60;img&#62; tags allow you to place images into your document. Just like the &#60;a&#62; tag that we saw earlier, &#60;img&#62; tags also require an attribute: the <code>src</code> attribute. <code>src</code> stands for <em>source</em>, and the source will be where the image is hosted. The hosted picture can be located locally on your computer, relative to another place on your website, or hosted on another another website.</p>
+	      <p>Image tags are <em>self closing</em> tags and their display with <strong>inline-block</strong>, meaning that pictures will line up next to text or other inline elements.</p>
+	      <p>Here's an example of an image tag.</p>
+	      <code>&#60;img src="./homer.png"/&#62;</code>
+	      <div class="example" style="height: auto;">
+		<img src="./homer.png">
+	      </div>
+	      <p>The <code>./</code> before the image name represents the where the file is on the computer. You can find a picture online, copy the URL to the picture, and paste it in as the attribute value for <code>src</code>.
 	      <br>
 	      <h3>Examples and Exercises:</h3>
-
+	      <p>Find a picture that you like online, and insert it below.</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -476,7 +504,7 @@
 
       <!-- Tables -->
       <fieldset id="table">
-	<legend><h3>&#60;table&#62;</h3></legend>
+	<legend><h3>&#60;table&#62; tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
@@ -509,7 +537,7 @@
 
       <!-- Div -->
       <fieldset id="div">
-	<legend><h3>&#60;div&#62;</h3></legend>
+	<legend><h3>&#60;div&#62; tags</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
@@ -540,9 +568,9 @@
 	<br>
       </fieldset>
 
-      <!-- Additional HTML5 Elements -->
-      <fieldset id="layout-extra">
-	<legend><h3>Additional HTML5 Elements</h3></legend>
+      <!-- HTML5 Semantic Elements -->
+      <fieldset id="semantic">
+	<legend><h3>HTML5 Semantic Elements</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">

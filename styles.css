@@ -20,18 +20,29 @@ textarea {
     animation-duration: 1s;
 }
 
+.nb {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
 code {
     background-color: #f0f0f0;
     padding: 3px;
     border: 1px solid black;
 }
 
+.code-block {
+    display: block;
+}
+
 .example,
 .exercise-output {
     padding: 5px;
-    border-sizing: border-box;
-    border: 1px solid black;
     height: 150px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-sizing: border-box;
     font-family: Georgia, Times, 'Times New Roman', serif
 }
 
