@@ -1,6 +1,6 @@
 # HTML Tutorial
 
-This HTML tutorial is aimed to get people who don't know anything about HTML the tools that they need to get started. It doesn't assume any previous knowledge about HTML, and it tries to give an extension understanding to what HTML is. It aims to teach HTML while not skipping over the details.
+This HTML tutorial is aimed to get people who don't know anything about HTML, and to give the tools that they need to get started writing HTML. It doesn't assume any previous knowledge about HTML, and it tries to provide an extensive understanding of basic HTML without glossing over the details.
 
 ## Examples
 
