@@ -22,7 +22,7 @@
 		<li><a href="#a">&#60;a&#62; tags</a></li>
 		<li><a href="#h1">&#60;h1&#62; tags</a></li>
 		<li><a href="#text-extra">Closing Remarks</a></li>
-		<h3>Layout Elements</h3>
+		<h3>Layout and Semantic Elements</h3>
 		<li><a href="#ol">&#60;ol&#62;</a></li>
 		<li><a href="#ul">&#60;ul&#62;</a></li>
 		<li><a href="#img">&#60;img&#62;</a></li>
@@ -360,9 +360,9 @@
       
     </div>
 
-    <!-- Layout Elements -->
+    <!-- Layout and Semantic Elements -->
     <div class="wrapper">
-      <h1>Layout Elements</h1>
+      <h1>Layout and Semantic Elements</h1>
       <fieldset class="nb">
 	<legend>N.B.</legend>
 	<p>Every element in this section has a display style of <strong>block</strong> except for &#60;img&#62; tags.</p>
@@ -648,7 +648,10 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>Meta tags...</p>
+	      <p>By now, I'd say that you know the basics of HTML. The elements that we've previously covered are more than enough to help you with building nearly any basic layout. The next thing to learn is about Meta Data tags.</p>
+	      <p>Meta tags provide information about your document to whatever program is reading your HTML (more likely than not, the web browser).</p>
+	      <p>There aren't going to be many exercises in this portion of the tutorial, but having an understanding of these final parts are crucial. By the end, I'll point you in a direction where you can continue to learn more HTML and start learning CSS. But by the time that you're done with this tutorial, you'll know enough to essentially lay out (not recreate) any basic web page.</p>
+	      <p>The following tags are usually only defined once in your HTML document, unless otherwise noted.</p>
 	    </div>
 	  </div>
 	  <div class="clear"></div>
@@ -657,32 +660,16 @@
       </fieldset>
 
       
-      <!-- Doctype -->
+      <!-- Doctype  was 12 -->
       <fieldset id="doctype">
 	<legend><h3>&#60;!DOCTYPE&#62;</h3></legend>
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
-	      <br>
-	      <h3>Examples and Exercises:</h3>
-
-	      <div class="resp-row">
-	       <div contenteditable="false" class="column half">
-		 <div contenteditable="false" class="inner-column">
-		   <p class="impt" >Your input here:</P>
-		   <textarea id="ei12" class="exercise-input"></textarea>
-		 </div>
-	       </div>
-	       <div contenteditable="false" class="column half">
-		 <div contenteditable="false" class="inner-column">
-		   <p class="impt">Your output here:</p>
-		   <div id="eo12" class="exercise-output"></div>
-		 </div>
-	       </div>
-	       <div class="clear"></div>
-	      </div>
-	      <br>
+	      <p>&#60;!DOCTYPE&#62; is a special tag. It tells the program that's reading your document how to interpret the following document. For HTML, the only one you'll need to know is the following tag:</p>
+	      <p><code>&#60;!DOCTYPE html&#62;</code></p>
+	      <p>This lets the program reading your document know, "Hey, treat the following as HTML."</p>
+	      <p>This is a tag that you need, and when creating a webpage, it will always be the first tag of your document</p>
 	    </div>
 	  </div>
 	  <div class="clear"></div>
@@ -696,27 +683,8 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
-	      <br>
-	      <h3>Examples and Exercises:</h3>
-
-	      <div class="resp-row">
-	       <div contenteditable="false" class="column half">
-		 <div contenteditable="false" class="inner-column">
-		   <p class="impt" >Your input here:</P>
-		   <textarea id="ei13" class="exercise-input"></textarea>
-		 </div>
-	       </div>
-	       <div contenteditable="false" class="column half">
-		 <div contenteditable="false" class="inner-column">
-		   <p class="impt">Your output here:</p>
-		   <div id="eo13" class="exercise-output"></div>
-		 </div>
-	       </div>
-	       <div class="clear"></div>
-	      </div>
-	      <br>
-	    </div>
+	      <p>The &#60;html&#62; tag is where all of your HTML will be placed.</p>
+	      <p>You'll start with the previous &#60;!DOCTYPE html&#62; followed by &#60;html&#62; [The rest of your HTML document] &#60;/html&#62</p>
 	  </div>
 	  <div class="clear"></div>
 	</div>
