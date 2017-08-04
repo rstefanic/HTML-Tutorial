@@ -756,9 +756,19 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
+	      <p>&#60;style&#62; tags allow you write CSS in your HTML document.</p>
+	      <p>It may be useful here to briefly mention what CSS is. CSS stands for <em>Cascading Style Sheets</em> and it's another language (just like HTML is a language) that's used to describe how to present the HTML document. While CSS is outside of the scope of this tutorial, I do think it's worth knowing that you can write CSS directly into your HTML document. You simply add your CSS inbetween two &#60;style&#62; tags.</p>
+	      <p>Here is a small snipet of CSS that you can place inside of a &#60;style&#62; tag:</p>
+	      <code class="code-block">
+		&#60;style&#62;
+		<br>&nbsp;&nbsp;p {
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;
+		<br>&nbsp;&nbsp;}
+		<br>&#60;/style&#62;
+	      </code>
+	      <p>The previous block of CSS that's wrapped inside of a &#60;style&62; tag changes the font size of all &#60;p&#62; tags to 14 pixels. Typically, &#60;style&#62; blocks are found at the top of the HTML document in the &#60;head&#62; tag. Inserting the &#60;style&#62; block into your document and writing CSS inside of the &#60;style&#62; block is known as an <em>internal stylesheet</em>.</p>
 	      <h3>Examples and Exercises:</h3>
-	      
+	      <p>Go ahead and type the previous block of code in the editor here. Notice how all of the text inside of a &#60;p&#62; tag on this page changes. Try playing with the numerical value in the style block to change the font size on the page.</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -769,7 +779,7 @@
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
 		   <p class="impt">Your output here:</p>
-		   <div id="eo12" class="exercise-output div-output"></div>
+		   <div id="eo12" class="exercise-output"></div>
 		 </div>
 	       </div>
 	       <div class="clear"></div>
@@ -787,13 +797,15 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>The &#60;link&#62; tag is used to link an external stylesheet to your page. Stylesheets stylize your pages to give them an extra feel. Stylesheets contain CSS, which is one of the three major languages of the web.</p>
+	      <p>So we previously covered how to write <em>internal</em> stylesheets, but what if you'd like to link an <em>external stylesheet</em> into your page? The &#60;link&#62; tag is used to accomplish that. A Stylesheets stylize your pages to give them an extra feel. It's another document/file that only contains CSS.</p>
 	      <p>You can think of HTML as the outline/layout of your page, CSS as the look and feel of your page, and JavaScript as the behaviour of your page. Since HTML is the base of all three of these, there must be a way to include CSS and JavaScript.</p>
 	      <p>We'll get to including JavaScript files/scripts in a moment, but for now, we'll focus on CSS and the &#60;link&#62; tag.</p>
-	      <p>To link some styles to your page, you first need an external stylesheet.</p>
+	      <p>To link some styles to your page, you first need an external stylesheet. Here is an example using the &#60;link&#62; tag.</p>
+	      <code>&#60;link rel="stylesheet" href="./path/to/stylesheet"&#62;</code>
+	      <p>The two attributes used here are <code>rel</code> attribute and the <code>href</code> attribute. You're already familiar with the <code>href</code> attribute: it's used to let us know where the file is located. The <code>rel</code> attribute is used to define the relationship between the current document, and document that's linked in the <code>href</code> attribute. The <code>rel</code> attribute is only used if an <code>href</code> attribute is present.</p>
 	    </div>
-
 	    <h3>Examples and Exercises:</h3>
+	    <p>Go ahead and link "./stylesheet.css" to this document. I've provided the file for you. You'll know when it's been linked correctly.</p>
 	      <div class="resp-row">
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
@@ -804,7 +816,7 @@
 	       <div contenteditable="false" class="column half">
 		 <div contenteditable="false" class="inner-column">
 		   <p class="impt">Your output here:</p>
-		   <div id="eo13" class="exercise-output div-output"></div>
+		   <div id="eo13" class="exercise-output"></div>
 		 </div>
 	       </div>
 	       <div class="clear"></div>
