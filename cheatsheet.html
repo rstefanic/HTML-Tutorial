@@ -34,6 +34,15 @@
 		<li><a href="#doctype">&#60;!DOCTYPE&#62;</a></li>
 		<li><a href="#html">&#60;html&#62;</a></li>
 		<li><a href="#head">&#60;head&#62;</a></li>
+		<li><a href="#title">&#60;title&#62;</a></li>
+		<li><a href="#meta">&#60;meta&#62;</a></li>
+		<li><a href="#style">&#60;style&#62;</a></li>
+		<li><a href="#link">&#60;link&#62;</a></li>
+		<li><a href="#script">&#60;script&#62;</a></li>
+		<li><a href="#body">&#60;body&#62;</a></li>
+		<li><a href="#together">Putting it all together</a></li>
+		<li><a href="#final">Final Exercise</a></li>
+		<li><a href="#additional-resources">Additional Resources</a></li>
 	      </ol>
 	    </div>
 	  </div>
@@ -68,7 +77,7 @@
 	      <p>In order to place text inside of a paragraph, you'll insert your paragraph text inbetween the opening and closing tags like so: <code>&#60;p&#62;My Text&#60;/p&#62;</code></p>
 	      <p>Remember how I just mentioned how tags must be closed? Well, that was a lie. Some tags do not need a closing tag, and these are known as <strong>self closing tag elements</strong>, meaning that they do not require a closing tag. Most tags need to be closed, and I'll be sure to let you know which tags do not need a closing tag</p>
 	      <p>We will cover <em>attributes</em> and their values later on once we come across a tag that uses them.</p>
-	      <fieldset>
+	      <fieldset class="nb">
 		<legend>N.B.</legend>
 	      <p><em>A quick note on display styles:</em><br><br>Different elements have different display properties by default. These defaults can be changed, but this falls a bit out of the scope of HTML; however, it's worth noting when learning HTML. For simplicity, there are three display styles: </p>
 	      <p><strong>Inline</strong> elements allow other elements to sit to their left and right.</p>
@@ -648,10 +657,11 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-	      <p>By now, I'd say that you know the basics of HTML. The elements that we've previously covered are more than enough to help you with building nearly any basic layout. The next thing to learn is about Meta Data tags.</p>
-	      <p>Meta tags provide information about your document to whatever program is reading your HTML (more likely than not, the web browser).</p>
+	      <p>By now, I'd say that you know the basics of HTML. The elements that we've previously covered are more than enough to help you with building nearly any basic layout. The next thing to learn is about meta data tags.</p>
+	      <p>Meta data tags provide information about your document to whatever program is reading your HTML (more likely than not, the web browser). Meta data is literally just data about your data.</p>
 	      <p>There aren't going to be many exercises in this portion of the tutorial, but having an understanding of these final parts are crucial. By the end, I'll point you in a direction where you can continue to learn more HTML and start learning CSS. But by the time that you're done with this tutorial, you'll know enough to essentially lay out (not recreate) any basic web page.</p>
 	      <p>The following tags are usually only defined once in your HTML document, unless otherwise noted.</p>
+	      <p>Please do not feel pressured to memorize everything in here. You can also refer to this document or Google if you ever forget.</p>
 	    </div>
 	  </div>
 	  <div class="clear"></div>
@@ -660,7 +670,7 @@
       </fieldset>
 
       
-      <!-- Doctype  was 12 -->
+      <!-- Doctype -->
       <fieldset id="doctype">
 	<legend><h3>&#60;!DOCTYPE&#62;</h3></legend>
 	<div class="resp-row">
@@ -697,33 +707,179 @@
 	<div class="resp-row">
 	  <div contenteditable="false" class="column full">
 	    <div contenteditable="false" class="inner-column">
-
-	      <br>
-	      <h3>Examples and Exercises:</h3>
-
-	      <div class="resp-row">
-	       <div contenteditable="false" class="column half">
-		 <div contenteditable="false" class="inner-column">
-		   <p class="impt" >Your input here:</P>
-		   <textarea id="ei14" class="exercise-input"></textarea>
-		 </div>
-	       </div>
-	       <div contenteditable="false" class="column half">
-		 <div contenteditable="false" class="inner-column">
-		   <p class="impt">Your output here:</p>
-		   <div id="eo14" class="exercise-output"></div>
-		 </div>
-	       </div>
-	       <div class="clear"></div>
-	      </div>
-	      <br>
+	      <fieldset class="nb">
+		<legend>N.B.</legend>
+		<p><em>Note:</em> &#60;head&#62; is different from the HTML5 semantic element &#60;header&#62;, which is used to define the header of a page (things like the menu bar, a hero image, etc.).</p>
+	      </fieldset>
+	      <p>&#60;head&#62; is an element that's used to describe some information about your document. It contains most of the meta data about your HTML document, and it lies in the &#60;html&#62; and before the &#60;body&#62; tag (more on the &#60;body&#62; tag soon). Some of the information that you'd put in your &#60;head&#62; tag would be things such as the title of page, external resources (such as CSS), and meta data. You'll find more information about the doument</p>
 	    </div>
-	  </div>
 	  <div class="clear"></div>
 	</div>
 	<br>
       </fieldset>
 
+      <!-- Title Tag -->
+      <fieldset id="title">
+	<legend><h3>&#60;title&#62;</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>The &#60;title&#62; is a meta-data tag, and it's placed inside of your &#60;head&#62; tag. It titles your document. As an example, the title of this document is "HTML Tutorial".</p>
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Meta Tag -->
+      <fieldset id="meta">
+	<legend><h3>&#60;meta&#62;</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>The &#60;meta&#62; tag is used to specify extra meta-data. It's also placed inside of your &#60;head&#62; tag and it's used to define things such as a description of your web page, the author of your webpage, the character set of your web page, and more.</p>
+	      <p>Here are some examples using the &#60;meta&#62; tag with various attributes:</p>
+	      <code class="code-block">
+		&#60;meta charset="UTF-8"&#62;
+		<br>&#60;meta name="description" content="HTML Tutorial"&#62;
+		<br>&#60;meta name="author" content="Robert Stefanic"&#62;
+	      </code>
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Style Tag -->
+      <fieldset id="style">
+	<legend><h3>&#60;style&#62;</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+
+	      <h3>Examples and Exercises:</h3>
+	      
+	      <div class="resp-row">
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt" >Your input here:</P>
+		   <textarea id="ei12" class="exercise-input"></textarea>
+		 </div>
+	       </div>
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt">Your output here:</p>
+		   <div id="eo12" class="exercise-output div-output"></div>
+		 </div>
+	       </div>
+	       <div class="clear"></div>
+	      </div>
+	      
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Link Tag -->
+      <fieldset id="link">
+	<legend><h3>&#60;link&#62;</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	      <p>The &#60;link&#62; tag is used to link an external stylesheet to your page. Stylesheets stylize your pages to give them an extra feel. Stylesheets contain CSS, which is one of the three major languages of the web.</p>
+	      <p>You can think of HTML as the outline/layout of your page, CSS as the look and feel of your page, and JavaScript as the behaviour of your page. Since HTML is the base of all three of these, there must be a way to include CSS and JavaScript.</p>
+	      <p>We'll get to including JavaScript files/scripts in a moment, but for now, we'll focus on CSS and the &#60;link&#62; tag.</p>
+	      <p>To link some styles to your page, you first need an external stylesheet.</p>
+	    </div>
+
+	    <h3>Examples and Exercises:</h3>
+	      <div class="resp-row">
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt" >Your input here:</P>
+		   <textarea id="ei13" class="exercise-input"></textarea>
+		 </div>
+	       </div>
+	       <div contenteditable="false" class="column half">
+		 <div contenteditable="false" class="inner-column">
+		   <p class="impt">Your output here:</p>
+		   <div id="eo13" class="exercise-output div-output"></div>
+		 </div>
+	       </div>
+	       <div class="clear"></div>
+	      </div>
+	      
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Script Tag -->
+      <fieldset id="script">
+	<legend><h3>&#60;script&#62;</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Body Tag -->
+      <fieldset id="body">
+	<legend><h3>&#60;body&#62;</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Putting it all together  -->
+      <fieldset id="together">
+	<legend><h3>Putting it all together</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+      <!-- Final Exercise -->
+      <fieldset id="final">
+	<legend><h3>Final Exercise</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+
+
+      <!-- Additional Resources -->
+      <fieldset id="additional-resources">
+	<legend><h3>Additional Resources</h3></legend>
+	<div class="resp-row">
+	  <div contenteditable="false" class="column full">
+	    <div contenteditable="false" class="inner-column">
+
+	    </div>
+	  <div class="clear"></div>
+	</div>
+	<br>
+      </fieldset>
+      
     </div>    
     <script type="text/javascript" src="script.js"></script>
   </body>
